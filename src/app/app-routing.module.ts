@@ -6,7 +6,8 @@ import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ServicesComponent } from './components/services/services.component';
 import { TrackingComponent } from './components/tracking/tracking.component';
-
+import { PricingComponent } from './components/pricing/pricing.component';
+import { HomeComponent } from './components/home/home.component'; 
 
 const routes: Routes = [
   {path: 'contact', component: ContactComponent},
@@ -15,6 +16,8 @@ const routes: Routes = [
   {path: 'register', component: RegisterComponent },
   {path: 'tracking', component: TrackingComponent },
   {path: 'about', component: AboutComponent },
+  {path: 'home', component: HomeComponent },
+  {path: 'pricing', component: PricingComponent },
   {path: '', redirectTo:"home", pathMatch:"full"},
 ];
 

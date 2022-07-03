@@ -1,17 +1,24 @@
+<div class="col-md-2 col-lg-2 col-sm-2 col-xs-6">
+    <div class="logo">
+        <a href="" routerLink="home"><img src="/src/img/logo.png" alt="logo"></a>
+    </div>
+</div>
+
+
 <div class="col-md-6 col-xs-6 col-md-offset-1 col-sm-7 col-lg-offset-1 col-lg-6 mobMenuCol">
     <nav class="navbar">
         <ul class="nav navbar-nav navbar-right menu">
-            <li><a href="index.html">home </a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="service.html">services</a></li>
-            <li><a href="pricing.html">pricing</a></li>
-            <li><a href="tracking.html">tracking</a></li>
-            <li><a href="contact.html">contact</a></li>
+            <li><a routerLink="/home" routerLinkActive='active' href="">home</a></li>
+            <li><a routerLink="/about" href="">about</a></li>
+            <li><a routerLink="/services" href="">services</a></li>
+            <li><a routerLink="/pricing" href="">pricing</a></li>
+            <li><a routerLink="/tracking" href="">tracking</a></li>
+            <li><a routerLink="/contact" href="">contact</a></li>
         </ul>
     </nav>
 </div>
-<div class="col-md-3 col-sm-3 col-xs-4 col-lg-3 signup">
+<div class="signup">
     <ul class="nav navbar-nav">
-        <li><a class='text-center' href="login.html">login</a></li>
+        <li><a routerLink="login" class='text-center' href="">login</a></li>
     </ul>
 </div>
