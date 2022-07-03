@@ -1,1 +1,48 @@
-<p>register works!</p>
+<div class="js">
+    <section class="about-us">
+        <div class="logo_menu" id="sticker">
+            <div class="container">
+                <div class="row">
+                   <app-nav></app-nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--    start contact page content-->
+    <section class="contact-page-area">
+        <div class="container">
+            <div class="row page-title">
+                <div class="col-md-5 col-sm-6">
+                    <div class="pricing-desc section-padding-two">
+                        <div class="pricing-desc-title">
+                            <div class="title">
+                                <h2>Register</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 col-sm-2">
+                    <div class="contact-form">
+                        <form method="POST" action="">
+                            <input type="text" name="username" placeholder="username" class="form-control mb-3">
+                            <input type="text" name="email" placeholder="email" class="form-control mb-3">
+                            <input type="password" name="password1" placeholder="password" class="form-control mb-3">
+                            <input type="password" name="password2" placeholder="confirm password" class="form-control mb-3">
+                            <button class="btn submit-btn mb-3" type="submit" name="submit">Submit</button>
+                        </form>
+                    </div>
+                    <div class="form-query">Already have an account? <a routerLink='/login'href="">Login</a></div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <app-footer></app-footer>
+</div>
