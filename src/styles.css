@@ -376,6 +376,8 @@ nav.navbar {
 .couter_up_area {
     height: 330px;
     position: relative;
+    overflow: hidden;
+
     background: url(src/assets/img/count_up.jpg) no-repeat center center / cover;
 }
 
@@ -384,9 +386,11 @@ nav.navbar {
     left: 0;
     top: 0;
     background: rgba(34, 47, 60, 0.93);
+
     content: "";
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .single_count > h1 {
@@ -416,9 +420,9 @@ nav.navbar {
 
 /*end of counter up*/
 
-.calculate_area {
+#tracking {
     padding: 100px 0;
-}
+} 
 
 .calculate_title > h2 {
     color: #000000;
@@ -532,15 +536,15 @@ nav.navbar {
 }
 
 .calculat-image {
-    bottom: 0;
+    /* bottom: 0; */
     position: absolute;
-    right: 0;
+    /* right: 0; */
 
 }
 
 .calculate_area {
     position: relative;
-    padding-top: 42vh;
+    /* padding-top: 42vh; */
 }
 
 .calulate {

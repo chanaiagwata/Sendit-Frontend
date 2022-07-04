@@ -117,5 +117,7 @@
       }
     }
   },
-  "defaultProject": "sendit"
+  "cli": {
+    "analytics": "e455d885-b436-4c94-82d2-fa6876485a80"
+  }
 }
