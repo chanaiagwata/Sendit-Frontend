@@ -34,7 +34,8 @@
               "src/assets/css/owl.carousel.css",
               "src/assets/css/jquery.mb.YTPlayer.min.css",
               "src/assets/css/meanmenu.css",
-              "src/assets/css/responsive.css"
+              "src/assets/css/responsive.css",
+              "./node_modules/leaflet/dist/leaflet.css"
             ],
             "scripts": [
               "src/assets/js/jquery.sticky.js",
