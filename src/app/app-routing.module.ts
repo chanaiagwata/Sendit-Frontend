@@ -8,11 +8,13 @@ import { ServicesComponent } from './components/services/services.component';
 import { TrackingComponent } from './components/tracking/tracking.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { HomeComponent } from './components/home/home.component'; 
+import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [
   {path: 'contact', component: ContactComponent},
   {path: 'services', component: ServicesComponent },
   {path: 'login', component: LoginComponent },
+  {path: 'profile', component: ProfileComponent },
   {path: 'register', component: RegisterComponent },
   {path: 'tracking', component: TrackingComponent },
   {path: 'about', component: AboutComponent },
