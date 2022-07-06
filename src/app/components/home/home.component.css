@@ -1,0 +1,13 @@
+#img{
+      /* The image used */
+  /* background-image: url("img_girl.jpg"); */
+  background-image: url(src/assets/img/a.jpeg);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
