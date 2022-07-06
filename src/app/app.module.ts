@@ -13,6 +13,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { TrackingComponent } from './components/tracking/tracking.component';
 import { ServicesComponent } from './components/services/services.component';
 import { PricingComponent } from './components/pricing/pricing.component';
+import { MapComponent } from './components/map/map.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PricingComponent } from './components/pricing/pricing.component';
     RegisterComponent,
     TrackingComponent,
     ServicesComponent,
-    PricingComponent
+    PricingComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
