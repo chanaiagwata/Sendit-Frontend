@@ -270,6 +270,9 @@ nav.navbar {
     padding-left: 35px;
     width: 100%;
 }
+.tracking{
+    padding-bottom: 50px; 
+}
 
 .welcome_form .form-control::-moz-placeholder {
     color: #b2b2b2;
@@ -285,7 +288,7 @@ nav.navbar {
     font-weight: 700;
     height: 59%;
     position: absolute;
-    right: 1%;
+    right: 3%;
     text-transform: capitalize;
     top: 7.7%;
     width: 230px;
