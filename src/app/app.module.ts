@@ -16,7 +16,7 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { MapComponent } from './components/map/map.component';
 import {FormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
-
+import { ProfileComponent } from './components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +31,8 @@ import { HttpClientModule } from '@angular/common/http';
     TrackingComponent,
     ServicesComponent,
     PricingComponent,
-    MapComponent
+    MapComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
