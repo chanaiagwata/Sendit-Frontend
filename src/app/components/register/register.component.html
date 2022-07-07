@@ -28,12 +28,12 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-6 col-sm-2">
                     <div class="contact-form">
-                        <form>
-                            <input type="text" name="username"  placeholder="username" class="form-control mb-3">
-                            <input type="text" name="email" placeholder="email" class="form-control mb-3">
-                            <input type="password" name="password1"  placeholder="password" class="form-control mb-3">
-                            <input type="password" name="password2" placeholder="confirm password" class="form-control mb-3">
-                            <button class="btn submit-btn mb-3" type="submit" name="submit">Submit</button>
+                        <form method="POST" action="">
+                            <input [(ngModel)]="register.username" [ngModelOptions]="{standalone: true}"  type="text" name="username" placeholder="username" class="form-control mb-3">
+                            <input [(ngModel)]="register.email" [ngModelOptions]="{standalone: true}" type="text" name="email" placeholder="email" class="form-control mb-3">
+                            <input [(ngModel)]="register.password" [ngModelOptions]="{standalone: true}" type="password" name="password" placeholder="password" class="form-control mb-3">
+                            <input [(ngModel)]="register.password2" [ngModelOptions]="{standalone: true}" type="password" name="password2" placeholder="confirm password" class="form-control mb-3">
+                            <button class="btn submit-btn mb-3" type="submit" name="submit" (click)="registerUser()" >Submit</button>
                         </form>
                     </div>
                     <div class="form-query">Already have an account? <a routerLink='/login'href="">Login</a></div>

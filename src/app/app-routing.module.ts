@@ -8,6 +8,7 @@ import { ServicesComponent } from './components/services/services.component';
 import { TrackingComponent } from './components/tracking/tracking.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { HomeComponent } from './components/home/home.component'; 
+import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [
   {path: 'contact', component: ContactComponent},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'home', component: HomeComponent },
   {path: 'pricing', component: PricingComponent },
+  {path: 'profile', component: ProfileComponent},
   {path: '', redirectTo:"home", pathMatch:"full"},
 ];
 

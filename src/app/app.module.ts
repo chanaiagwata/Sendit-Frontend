@@ -16,6 +16,10 @@ import { ServicesComponent } from './components/services/services.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { MapComponent } from './components/map/map.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {FormsModule} from "@angular/forms";
+import { HttpClientModule } from '@angular/common/http';
+import { ProfileComponent } from './components/profile/profile.component';
+
 
 @NgModule({
   declarations: [
@@ -30,7 +34,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TrackingComponent,
     ServicesComponent,
     PricingComponent,
-    MapComponent
+    MapComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -38,6 +43,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule, 
     FormsModule,
     ReactiveFormsModule
+    FormsModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
