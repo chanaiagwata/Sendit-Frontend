@@ -1,3 +1,35 @@
 .col-xs-12{
     margin: auto;
 }
+#details{
+    margin-top: 10%;
+    margin-bottom: 7%;
+
+}
+.title{
+    margin-bottom: 5%;
+}
+#cols{
+    margin-top: 10%;
+}
+#btns{
+    margin-top: 2%;
+}
+#btn3{
+    background-color: #22313f;
+color: rgb(255, 255, 255);
+}
+#btn3:hover{
+background-color:#f9bf3b;
+    
+color: rgb(255, 255, 255);
+}
+
+/* #btn2{
+    background-color:#f9413b;
+    color: #000;
+}
+#btn1{
+        background-color:#3b0303;
+        color: #000;
+} */
