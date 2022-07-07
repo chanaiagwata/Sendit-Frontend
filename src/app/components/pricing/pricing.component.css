@@ -2,8 +2,8 @@
     margin: auto;
 }
 #details{
-    margin-top: 10%;
-    margin-bottom: 7%;
+    margin-top: 6%;
+    margin-bottom: 5%;
 
 }
 .title{
@@ -15,16 +15,25 @@
 #btns{
     margin-top: 2%;
 }
-#btn3{
+.btns .btn{
+    margin-left: 4%;
+
+}
+#btn4{
     background-color: #22313f;
 color: rgb(255, 255, 255);
 }
-#btn3:hover{
+#btn4:hover{
 background-color:#f9bf3b;
     
 color: rgb(255, 255, 255);
 }
-
+#btn3{
+   width: 39%;
+   margin-left: 4%;
+justify-content: center;
+border-radius: 15px;
+    }
 /* #btn2{
     background-color:#f9413b;
     color: #000;

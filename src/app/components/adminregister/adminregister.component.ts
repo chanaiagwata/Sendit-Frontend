@@ -2,30 +2,28 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { AuthService } from 'src/app/services/auth.service';
 import { Router } from '@angular/router';
-
-
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css'],
-  providers: [AuthService]
+  selector: 'app-adminregister',
+  templateUrl: './adminregister.component.html',
+  styleUrls: ['./adminregister.component.css']
 })
-export class RegisterComponent implements OnInit {
+export class AdminregisterComponent implements OnInit {
 
-  register: any;
+  
+  adminregister: any;
 
   constructor(public authService: AuthService, public router: Router) { }
 
   ngOnInit(): void {
-    this.register= {username:'',email:'',password:'', password2:''};
+    this.adminregister= {username:'',email:'',password:'', password2:''};
   }
   goLogin() {
     this.router.navigate(['/', 'login']);
   }
-  registerUser(){
-    this.authService.registerUser(this.register).subscribe(
+  registerAdmin(){
+    this.authService.registerAdmin(this.adminregister).subscribe(
       response=> {
-        alert('User has been registered successfully!')
+        alert(' Admin has been registered successfully!')
         this.goLogin()
       },
       error=> console.log (error)

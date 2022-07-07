@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,10 +14,11 @@ import { TrackingComponent } from './components/tracking/tracking.component';
 import { ServicesComponent } from './components/services/services.component';
 import { PricingComponent } from './components/pricing/pricing.component';
 import { MapComponent } from './components/map/map.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {  ReactiveFormsModule } from '@angular/forms';
 import {FormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './components/profile/profile.component';
+import { AdminregisterComponent } from './components/adminregister/adminregister.component';
 
 
 @NgModule({
@@ -35,7 +35,8 @@ import { ProfileComponent } from './components/profile/profile.component';
     ServicesComponent,
     PricingComponent,
     MapComponent,
-    ProfileComponent
+    ProfileComponent,
+    AdminregisterComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,8 +44,6 @@ import { ProfileComponent } from './components/profile/profile.component';
     HttpClientModule, 
     FormsModule,
     ReactiveFormsModule
-    FormsModule,
-    HttpClientModule,
 
   ],
   providers: [],
