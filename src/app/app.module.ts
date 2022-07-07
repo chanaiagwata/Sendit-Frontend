@@ -14,11 +14,11 @@ import { RegisterComponent } from './components/register/register.component';
 import { TrackingComponent } from './components/tracking/tracking.component';
 import { ServicesComponent } from './components/services/services.component';
 import { PricingComponent } from './components/pricing/pricing.component';
+import { ProfileComponent } from './components/profile/profile.component';
 import { MapComponent } from './components/map/map.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import {FormsModule} from "@angular/forms";
-import { HttpClientModule } from '@angular/common/http';
-import { ProfileComponent } from './components/profile/profile.component';
+
+
 
 
 @NgModule({
@@ -42,9 +42,7 @@ import { ProfileComponent } from './components/profile/profile.component';
     AppRoutingModule,
     HttpClientModule, 
     FormsModule,
-    ReactiveFormsModule
-    FormsModule,
-    HttpClientModule,
+    ReactiveFormsModule,
 
   ],
   providers: [],
