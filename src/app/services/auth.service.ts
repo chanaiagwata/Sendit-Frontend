@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { loginUrl, logoutUrl, registerAdminUrl, registerUserUrl } from 'src/environments/environment';
+import { BASE_URL } from 'src/environments/environment';
 
 
 
@@ -12,16 +12,17 @@ export class AuthService {
 
   constructor(private http: HttpClient) {  }
   login(data: any):Observable<any>{
-    return this.http.post(loginUrl, data)
+    return this.http.post(`${BASE_URL}/login`, data)
   }
 
   logout(data: any):Observable<any>{
-    return this.http.post(logoutUrl, data)
+    return this.http.post(`${BASE_URL}/logout`, data)
   }
+
   registerUser(userData:any): Observable<any>{
-      return this.http.post(registerUserUrl, userData);
+      return this.http.post(`${BASE_URL}/client`, userData);
     }
   registerAdmin(userData:any): Observable<any>{
-      return this.http.post(registerAdminUrl, userData);
+      return this.http.post(`${BASE_URL}/admin`, userData);
     }
   }
