@@ -18,6 +18,7 @@ export class AuthService {
   logout(data: any):Observable<any>{
     return this.http.post(logoutUrl, data)
   }
+
   registerUser(userData:any): Observable<any>{
       return this.http.post('https://sendit-backed.herokuapp.com/api/client', userData);
     }
