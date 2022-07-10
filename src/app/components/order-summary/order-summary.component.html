@@ -1,0 +1,80 @@
+<div class="js">
+    <section class="about-us">
+        <div class="logo_menu" id="sticker">
+            <div class="container">
+                <div class="row">
+                    <app-nav></app-nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Area -->
+    <section class="about_top">
+        <div class="container">
+            <div class="row page-title">
+                <div class="col-md-5 col-sm-6">
+                    <div class="pricing-desc section-padding-two">
+                        <div class="pricing-desc-title">
+                            <div class="title">
+                                <h2>Order Summary</h2>
+                                <p>We offer fast and affordable parcel delivery services</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row" *ngFor="let parcel of parcels">
+                        <div class="col-md-12" id="col">
+                            <ul class="list-group  my-details">
+                                <li class="list-group-item"><b>Name:</b> 
+                                    {{parcel.name}}
+                                </li>
+                                <li class="list-group-item"> <b>Description:</b>
+                                    {{parcel.description}}
+                                </li>
+                                <li class="list-group-item"><b>Price:</b>
+                                    {{parcel.price}}
+                                </li>
+                                <li class="list-group-item"> <b>Weight: </b>
+                                    {{parcel.weight}}
+                                </li>
+                                <li class="list-group-item"><b>Parcel Status:</b>
+                                    {{parcel.parcel_status}}
+                                </li>
+                                <li class="list-group-item"> <b>Destination:</b>
+                                   {{parcel.destination}}
+                                </li>
+                                <li class="list-group-item"><b>Parcel Image:</b>
+                                   {{parcel.photo}}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="container" id="btns">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <button type="button" class="btn submit-btn" id="btn3">Cancel</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn submit-btn" id="btn3">Change </button>
+                            </div>
+                            <div class="col-md-3">
+                                <button type="button" class="btn submit-btn " id="btn3">track</button>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-md-6">
+                    <!-- Pay Section -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <app-footer></app-footer>
+</div>
+
+

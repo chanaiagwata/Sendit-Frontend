@@ -18,6 +18,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { MapComponent } from './components/map/map.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminregisterComponent } from './components/adminregister/adminregister.component';
+import { OrderSummaryComponent } from './components/order-summary/order-summary.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { AdminregisterComponent } from './components/adminregister/adminregister
     MapComponent,
     ProfileComponent,
     AdminregisterComponent,
+    OrderSummaryComponent,
   ],
   imports: [
     BrowserModule,

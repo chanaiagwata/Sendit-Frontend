@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PostParcel } from 'src/app/parcel';
 import { ParcelsService } from 'src/app/services/parcels.service';
 
 @Component({
@@ -7,26 +8,37 @@ import { ParcelsService } from 'src/app/services/parcels.service';
   styleUrls: ['./pricing.component.css']
 })
 export class PricingComponent implements OnInit {
-  parcels!:any ;
 
+  name!: string
+  description!: string
+  weight!: number
+  destination!: string
+  photo! : string
+
+  parcels: PostParcel[] = []
   constructor(private parcelService: ParcelsService) { }
 
   ngOnInit(): void {
-    this.allParcels()
+    
   }
 
-  allParcels(){
-    this.parcelService.getParcels(this.parcels).subscribe(
-      response => {
-        response.data = this.parcels
-        console.log(response.data)
-      },
-      error => {
-        alert('error')
-      }
-    )
+  sendParcel(){
+    const newParcel = {
+      name : this.name,
+      description: this.description,
+      weight: this.weight,
+      destination: this.destination,
+      photo: this.photo
+      }   
+
+      this.parcelService.addParcel(newParcel).subscribe((newParcel) => {
+        console.log(newParcel)
+      })
     }
+}
 
   
 
-}
+  
+
+
