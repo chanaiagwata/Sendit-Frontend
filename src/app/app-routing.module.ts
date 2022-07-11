@@ -10,6 +10,9 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { HomeComponent } from './components/home/home.component'; 
 import { ProfileComponent } from './components/profile/profile.component';
 import { AdminregisterComponent } from './components/adminregister/adminregister.component';
+import { CalculatorComponent } from './components/calculator/calculator.component';
+import { AuthGuard } from './auth.guard';
+
 
 const routes: Routes = [
   {path: 'contact', component: ContactComponent},
@@ -21,8 +24,12 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'home', component: HomeComponent },
   {path: 'pricing', component: PricingComponent },
-  {path: 'profile', component: ProfileComponent},
+  {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
   {path: '', redirectTo:"home", pathMatch:"full"},
+  {path: 'calculator', component:CalculatorComponent},
+
+
+  
 ];
 
 @NgModule({

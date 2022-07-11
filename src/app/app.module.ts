@@ -19,6 +19,11 @@ import {FormsModule} from "@angular/forms";
 import { HttpClientModule } from '@angular/common/http';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AdminregisterComponent } from './components/adminregister/adminregister.component';
+import { CalculatorComponent } from './components/calculator/calculator.component';
+// import { AgmCoreModule } from '@agm/core';
+
+
+
 
 
 @NgModule({
@@ -37,13 +42,15 @@ import { AdminregisterComponent } from './components/adminregister/adminregister
     MapComponent,
     ProfileComponent,
     AdminregisterComponent,
+    CalculatorComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule, 
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+   
 
   ],
   providers: [],
