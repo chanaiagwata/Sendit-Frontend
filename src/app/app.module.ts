@@ -18,6 +18,9 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { MapComponent } from './components/map/map.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AdminregisterComponent } from './components/adminregister/adminregister.component';
+import { CalculatorComponent } from './components/calculator/calculator.component';
+// import { AgmCoreModule } from '@agm/core';
+
 import { OrderSummaryComponent } from './components/order-summary/order-summary.component';
 
 
@@ -37,6 +40,7 @@ import { OrderSummaryComponent } from './components/order-summary/order-summary.
     MapComponent,
     ProfileComponent,
     AdminregisterComponent,
+    CalculatorComponent,
     OrderSummaryComponent,
   ],
   imports: [
@@ -44,7 +48,8 @@ import { OrderSummaryComponent } from './components/order-summary/order-summary.
     AppRoutingModule,
     HttpClientModule, 
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+   
 
   ],
   providers: [],
