@@ -11,7 +11,6 @@ import { Router } from '@angular/router';
   providers: [AuthService]
 })
 export class RegisterComponent implements OnInit {
-
   register: any;
 
   constructor(public authService: AuthService, public router: Router) { }
