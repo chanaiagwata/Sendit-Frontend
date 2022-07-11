@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
 
   formGroup!: FormGroup;
 
-  constructor(private authService: AuthService) { }
+  constructor(private authService: AuthService, public router: Router) { }
 
   ngOnInit(): void {
     this.initForm()
@@ -25,12 +25,16 @@ export class LoginComponent implements OnInit {
       password : new FormControl('', [Validators.required]),
     })
   }
+  goHome() {
+    this.router.navigate(['/', 'home']);
+  }
 
   loginProcess(){
     if(this.formGroup.valid){
       this.authService.login(this.formGroup.value).subscribe(
         response => {
           alert('success')
+          this.goHome()
         },
         error => {
           alert('error')

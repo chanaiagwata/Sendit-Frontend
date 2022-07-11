@@ -10,6 +10,7 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { HomeComponent } from './components/home/home.component'; 
 import { ProfileComponent } from './components/profile/profile.component';
 import { AdminregisterComponent } from './components/adminregister/adminregister.component';
+import { OrderSummaryComponent } from './components/order-summary/order-summary.component';
 
 const routes: Routes = [
   {path: 'contact', component: ContactComponent},
@@ -20,8 +21,9 @@ const routes: Routes = [
   {path: 'tracking', component: TrackingComponent },
   {path: 'about', component: AboutComponent },
   {path: 'home', component: HomeComponent },
-  {path: 'pricing', component: PricingComponent },
+  {path: 'orders', component: PricingComponent },
   {path: 'profile', component: ProfileComponent},
+  {path: 'summary', component: OrderSummaryComponent},
   {path: '', redirectTo:"home", pathMatch:"full"},
 ];
 

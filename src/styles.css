@@ -1327,7 +1327,11 @@ ul.breadcrumbs li {
     transition: .4s
 }
 
-.submit-btn:hover {
+.input-submit{
+    border: none;
+ 
+}
+.submit-btn:hover{
     background: #fff;
     color: #f9bf3b;
     border: 1px solid #f9bf3b;
