@@ -11,8 +11,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AdminregisterComponent } from './components/adminregister/adminregister.component';
 import { CalculatorComponent } from './components/calculator/calculator.component';
+import { OrderSummaryComponent } from './components/order-summary/order-summary.component';
 import { AuthGuard } from './auth.guard';
-
 
 const routes: Routes = [
   {path: 'contact', component: ContactComponent},
@@ -23,8 +23,9 @@ const routes: Routes = [
   {path: 'tracking', component: TrackingComponent },
   {path: 'about', component: AboutComponent },
   {path: 'home', component: HomeComponent },
-  {path: 'pricing', component: PricingComponent },
+  {path: 'orders', component: PricingComponent},
   {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
+  {path: 'summary', component: OrderSummaryComponent},
   {path: '', redirectTo:"home", pathMatch:"full"},
   {path: 'calculator', component:CalculatorComponent},
 
@@ -37,3 +38,5 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+

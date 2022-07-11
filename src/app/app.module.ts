@@ -21,8 +21,7 @@ import { AdminregisterComponent } from './components/adminregister/adminregister
 import { CalculatorComponent } from './components/calculator/calculator.component';
 // import { AgmCoreModule } from '@agm/core';
 
-
-
+import { OrderSummaryComponent } from './components/order-summary/order-summary.component';
 
 
 @NgModule({
@@ -42,6 +41,7 @@ import { CalculatorComponent } from './components/calculator/calculator.componen
     ProfileComponent,
     AdminregisterComponent,
     CalculatorComponent,
+    OrderSummaryComponent,
   ],
   imports: [
     BrowserModule,
