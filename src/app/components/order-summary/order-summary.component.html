@@ -25,9 +25,37 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="row" *ngFor="let parcel of parcels">
-                        <div class="col-md-12" id="col">
+                <div class="col-md-12">
+                    <div class="row "*ngFor="let parcel of parcels">
+                        <div class="col-md-9" id="col">
+                            <!-- <table class="table table-hover  my-details" > -->
+                                <!-- <thead>
+                                  <tr >
+                                    <th>Name:</th>
+                                    <th>Description:</th>
+                                    <th>Price:</th>
+                                    <th>Weight:</th>
+                                    <th>Parcel Status:</th>
+                                    <th>Destination:</th>
+                                    <th>Parcel Image:</th>
+
+                                  </tr>
+                                </thead>
+                                <tbody *ngFor="let parcel of parcels">
+                                    <tr>
+                                        <td>{{parcel.name}}</td>
+                                        <td>{{parcel.description}}</td>
+                                        <td> {{parcel.price}}</td>
+                                        <td> {{parcel.weight}}</td>
+                                        <td> {{parcel.parcel_status}}</td>
+                                        <td> {{parcel.destination}}</td>
+                                        {{parcel.photo}}
+
+
+                                      </tr>
+                                     
+                                </tbody>
+                              </table> -->
                             <ul class="list-group  my-details">
                                 <li class="list-group-item"><b>Name:</b> 
                                     {{parcel.name}}
@@ -47,10 +75,18 @@
                                 <li class="list-group-item"> <b>Destination:</b>
                                    {{parcel.destination}}
                                 </li>
-                                <li class="list-group-item"><b>Parcel Image:</b>
-                                   {{parcel.photo}}
-                                </li>
-                            </ul>
+                              
+                            </ul> 
+                        </div>
+                        <div class="col-md-3">
+                            <h5>Parcel Image</h5>
+                            <!-- <img src="{{parcel.photo}}" alt=""> -->
+                    
+        
+                            <img id="myimage" *ngIf="parcel.photo?.url" [src]='parcel.photo.url' >
+
+                            
+
                         </div>
                     </div>
                     <div class="container" id="btns">
