@@ -11,3 +11,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.item{
+  background-color: #f9bf3b;
+  font-weight: bolder;
+}
+.item:hover{
+  background-color: #ffffff;
+  color: #f9bf3b;
+}

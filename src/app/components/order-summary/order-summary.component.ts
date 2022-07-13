@@ -32,7 +32,7 @@ export class OrderSummaryComponent implements OnInit {
 
   changeDestination(parcel: any){ 
     if(this.changeForm.valid){
-    this.parcelService.updateParcel(this.changeForm).subscribe(
+    this.parcelService.updateParcel(parcel).subscribe(
       result => {
        console.log(result)
       }

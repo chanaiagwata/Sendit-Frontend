@@ -25,8 +25,11 @@ export class ParcelsService {
     return this.http.post<PostParcel>(`${BASE_URL}/parcel/`, body, httpOptions)
   }
 
-  updateParcel(parcel:any):Observable<any>{
-    return this.http.put<any>(`${BASE_URL}/parcel/${parcel.id}/`, parcel, httpOptions)
+  // updateParcel(parcel:any):Observable<any>{
+  //   return this.http.put<any>(`${BASE_URL}/parcel/${parcel.id}/`, parcel, httpOptions)
+  // }
+  updateParcel(parcel:any){
+    return this.http.put(`${BASE_URL}/parcel/${parcel.id}/`, parcel)
   }
 
   cancelParcel(parcel:any):Observable<any>{

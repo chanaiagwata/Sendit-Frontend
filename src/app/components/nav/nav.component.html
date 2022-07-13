@@ -8,7 +8,7 @@
 <div class="col-md-6 col-xs-6 col-md-offset-1 col-sm-7 col-lg-offset-1 col-lg-6 mobMenuCol">
     <nav class="navbar">
         <ul class="nav navbar-nav navbar-right menu">
-            <li><a routerLink="/home" routerLinkActive='active' href="">home</a></li>
+            <li><a routerLink="" routerLinkActive='active' href="/home">home</a></li>
             <li><a routerLink="/about" href="">about</a></li>
             <li><a routerLink="/services" href="">services</a></li>
             
@@ -22,13 +22,18 @@
               </li>
             <li><a routerLink="/tracking" href="">tracking</a></li>
             <li><a routerLink="/contact" href="">contact</a></li>
-            <li><a routerLink="/profile" href="">profile</a></li>
+            <!-- <li><a routerLink="/profile" href="">profile</a></li> -->
 
         </ul>
     </nav>
 </div>
 <div class="signup">
     <ul class="nav navbar-nav">
-        <li><a routerLink="/login" class='text-center' href=""> login</a></li>
+        <li *ngIf="!loggedin()" ><a routerLink="/login" class='text-center' href=""> login</a></li>
+        <li *ngIf="loggedin()"><a routerLink="/logout" class='text-center' (click)="onLogout" href=""> logout</a></li>
+
+        <!-- <li *ngIf = "userIsAuthenticated">  
+            <button mat-button (click)= "onLogout()">Logout</button>  
+          </li>   -->
     </ul>
 </div>
