@@ -11,6 +11,7 @@ import { BASE_URL } from 'src/environments/environment';
 })
 export class AuthService {
   BASE_URL = `https://sendit-backed.herokuapp.com/api`
+
   constructor(private http: HttpClient) { 
 
    }
@@ -47,12 +48,15 @@ export class AuthService {
       return this.http.post(`${BASE_URL}/admin`, userData);
     }
   loginUsers(userData:any): Observable<any>{
-      return this.http.post('https://sendit-backed.herokuapp.com/api/login', userData);
+      return this.http.post(`${BASE_URL}/login`, userData);
     }
+  // logout() {  
+  //     this.token = null;  
+  //     this.isAuthenticated = false;  
+  //   }    
   
   isLoggedIn() {
 
-    // return !!localStorage.getItem('token');
       const token = localStorage.getItem('token'); // get token from local storage
       const payload = atob(token!.split('.')[1]); // decode payload of token
       const parsedPayload = JSON.parse(payload); // convert payload into an Object

@@ -34,6 +34,7 @@ export class OrderSummaryComponent implements OnInit {
   changeDestination(parcel:any){ 
     if(this.changeForm.valid){
     this.parcelService.updateParcel(parcel).subscribe(
+
       response => {
        console.log(response)
       }
