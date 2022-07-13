@@ -3,7 +3,6 @@ export interface PostParcel  {
     description: string
     weight: number
     destination: string
-    photo: string
 }
 
 
@@ -14,5 +13,5 @@ export interface Parcel  {
     price: number
     parcel_status: string
     destination: string
-    photo: string
+    photo:{ url: string }
 }

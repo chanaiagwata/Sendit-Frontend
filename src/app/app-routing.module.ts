@@ -24,7 +24,7 @@ const routes: Routes = [
   {path: 'about', component: AboutComponent },
   {path: 'home', component: HomeComponent },
   {path: 'orders', component: PricingComponent},
-  {path: 'profile', component: ProfileComponent, canActivate: [AuthGuard]},
+  {path: 'profile', component: ProfileComponent},
   {path: 'summary', component: OrderSummaryComponent},
   {path: '', redirectTo:"home", pathMatch:"full"},
   {path: 'calculator', component:CalculatorComponent},
