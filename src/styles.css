@@ -302,7 +302,7 @@ nav.navbar {
 }
 
 .submit {
-    /* background: #f9bf3b none repeat scroll 0 0; */
+    background: #f9bf3b none repeat scroll 0 0;
     border: medium none;
     border-radius: 50px;
     color: #ffffff;
@@ -379,7 +379,6 @@ nav.navbar {
     height: 330px;
     position: relative;
     overflow: hidden;
-
     background: url(src/assets/img/count_up.jpg) no-repeat center center / cover;
 }
 
@@ -388,7 +387,6 @@ nav.navbar {
     left: 0;
     top: 0;
     background: rgba(34, 47, 60, 0.93);
-
     content: "";
     width: 100%;
     height: 100%;
@@ -951,9 +949,34 @@ video#bgvid {
     transition: .4s
 }
 
+@media screen and (max-device-width: 972px) {
+   .item_icon img{
+       width: 30%;
+
+   }
+   #tracking{
+       width: 100%;
+   }
+   #row1{
+       width: 50%;
+   }
+   #cols1 {
+       width: 100%;
+   }
+   #cols1 img{
+display:none 
+  }
+}
 @media screen and (max-device-width: 800px) {
     #bgvid {
         display: none;
+    }
+}
+@media screen and (max-device-width: 766px) {
+    .footericon img{
+        /* width: 20%; */
+        max-width: 15%;
+
     }
 }
 

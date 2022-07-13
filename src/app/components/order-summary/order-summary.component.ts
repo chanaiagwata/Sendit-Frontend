@@ -15,26 +15,34 @@ export class OrderSummaryComponent implements OnInit {
 
   ngOnInit(): void {
     this.getParcels();
-    this.initForm()
+    this.updateForm()
   }
 
-  initForm(){
+  updateForm(){
     this.changeForm = new FormGroup({
       destination : new FormControl('', [Validators.required]),
     })
   }
 
   getParcels(){
-    this.parcelService.getParcels().subscribe((response)=>{
+    this.parcelService.getParcels().subscribe((response: any)=>{
       this.parcels = response
+      console.log(response)
     })
   }
 
-  changeDestination(parcel: any){ 
+  changeDestination(parcel:any){ 
     if(this.changeForm.valid){
+<<<<<<< HEAD
     this.parcelService.updateParcel(this.changeForm.value).subscribe(
       result => {
        console.log(result)
+=======
+    this.parcelService.updateParcel(parcel).subscribe(
+
+      response => {
+       console.log(response)
+>>>>>>> 410f48bbac1b9340d6868247d856f2d7417f8e72
       }
      )
     }
