@@ -15,10 +15,10 @@ export class OrderSummaryComponent implements OnInit {
 
   ngOnInit(): void {
     this.getParcels();
-    this.initForm()
+    this.updateForm()
   }
 
-  initForm(){
+  updateForm(){
     this.changeForm = new FormGroup({
       destination : new FormControl('', [Validators.required]),
     })
@@ -32,9 +32,9 @@ export class OrderSummaryComponent implements OnInit {
 
   changeDestination(parcel: any){ 
     if(this.changeForm.valid){
-    this.parcelService.updateParcel(this.changeForm).subscribe(
-      result => {
-       console.log(result)
+    this.parcelService.updateParcel(parcel).subscribe(
+      parcel => {
+       console.log(parcel)
       }
      )
     }

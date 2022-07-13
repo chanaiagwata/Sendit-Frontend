@@ -10,9 +10,9 @@ export interface PostParcel  {
 export interface Parcel  {
     name: string
     description: string
-    weight: number
+    weight: any
     price: number
-    parcel_status: string
-    destination: string
-    photo: string
+    parcel_status: any
+    destination: any
+    photo: {url: string}
 }
