@@ -25,16 +25,17 @@ export class OrderSummaryComponent implements OnInit {
   }
 
   getParcels(){
-    this.parcelService.getParcels().subscribe((response)=>{
+    this.parcelService.getParcels().subscribe((response: any)=>{
       this.parcels = response
+      console.log(response)
     })
   }
 
-  changeDestination(parcel: any){ 
+  changeDestination(parcel:any){ 
     if(this.changeForm.valid){
     this.parcelService.updateParcel(parcel).subscribe(
-      parcel => {
-       console.log(parcel)
+      response => {
+       console.log(response)
       }
      )
     }
