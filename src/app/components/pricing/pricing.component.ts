@@ -31,9 +31,11 @@ export class PricingComponent implements OnInit {
       photo: this.photo
       }   
 
-      this.parcelService.addParcel(newParcel).subscribe((newParcel) => {
+      this.parcelService.addParcel(newParcel).subscribe(
+        (newParcel) => {
         console.log(newParcel)
-      })
+        }
+      )
     }
 }
 
