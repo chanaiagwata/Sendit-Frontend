@@ -27,7 +27,7 @@ export class RegisterComponent implements OnInit {
         alert('User has been registered successfully!')
         this.goLogin()
       },
-      error=> console.log (error)
+      error=> console.log(error)
     );
   }
 
