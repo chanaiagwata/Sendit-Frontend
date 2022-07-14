@@ -1,7 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { BASE_URL } from 'src/environments/environment';
+import { BASE_URL } from 'src/environments/environment.prod';
 import { PostParcel, Parcel} from 'src/app/parcel'
 
 
